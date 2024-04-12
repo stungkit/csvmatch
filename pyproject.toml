@@ -29,8 +29,12 @@ distribution = true
 
 [tool.pdm.dev-dependencies]
 test = [
+    "ruff",
     "pyright"
 ]
 
 [tool.pdm.scripts]
 typechecker = "pyright"
+
+[tool.ruff.lint]
+ignore = ["E701"]
